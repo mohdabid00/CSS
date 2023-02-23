@@ -9,10 +9,72 @@
         body{
             background: url(images/back_img.jpg) no-repeat center fixed;
             background-size: cover;
+            margin: 150px;
+            color: azure;
+        }
+        div.container{
+            background-color: white;
+            opacity: 0.7;
+            height: 500px;
+            width: auto;
+            border-radius: 4px;
+        }
+        form{
+            padding: 5px;
+            font-weight: bold;
+            color:black
+        }
+        h1.heading{
+            font-weight: bold;
+            color: black;
+            padding: 10px 0px 0px 20px;
+        }
+        input{
+            width:95%;
+            height: 30px;
+            margin:3px 0px 0px 5px;
+            background:fixed;
+            box-sizing: border-box;
+            border: none;
+            border-bottom:solid black ;
+            border-radius: 5px;
+        }
+        input:hover{
+            background-color: transparent;
+            border: solid 2px;
+        }
+        label{
+            margin: 0px 0px 2px 3px;
+            color: black;
+            font-weight: bolder;
+            
+        }
+        input.button{
+            margin: 40px 2px 0px 4px;
+            background-color: palevioletred;
+            border: solid 1px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            
+        }
+        input.button:hover{
+            background-color:rgb(246, 64, 124);
         }
     </style>
 </head>
 <body>
-    <h1>Log_In Here :</h1>
+    <div class="container">
+    <h1 class="heading">Log_In Here :</h1>
+    <form action="" method="post">
+        <label name="user_name">User_Name</label><br>
+        <input type="text" name="user_name" >
+    </input><br><br>
+    <label name="pass">Password</label><br>
+        <input type="password" name="pass" >
+    </input>
+    <input type="button" value="Log_In" class="button">
+    </form>
+</div>
 </body>
 </html>
